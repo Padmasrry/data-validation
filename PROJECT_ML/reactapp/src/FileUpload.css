@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-mode {
+  display: block; /* Override flex to full window */
+}
+
+.login-mode .sidebar {
+  display: none; /* Hide sidebar on login page */
+}
+
+.login-mode .main-content {
+  width: 100%; /* Full width for login page */
+  margin: 0; /* Remove margin */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px;
+  color: white;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: #34495e;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+  background-color: #f9f9f9;
+}

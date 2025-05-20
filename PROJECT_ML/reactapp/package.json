@@ -1,0 +1,70 @@
+{
+  "name": "reactapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.8.1",
+    "chart.js": "^4.4.8",
+    "eventsource": "^3.0.5",
+    "lucide-react": "^0.475.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.2.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4",
+    "ws": "^8.18.1"
+  },
+  "scripts": {
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-essentials": "^8.6.6",
+    "@storybook/addon-interactions": "^8.6.6",
+    "@storybook/addon-onboarding": "^8.6.6",
+    "@storybook/blocks": "^8.6.6",
+    "@storybook/preset-create-react-app": "^8.6.6",
+    "@storybook/react": "^8.6.6",
+    "@storybook/react-webpack5": "^8.6.6",
+    "@storybook/test": "^8.6.6",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.22.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-storybook": "^0.11.4",
+    "postcss": "^8.5.2",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.6.6",
+    "tailwindcss": "^4.0.7",
+    "webpack": "^5.98.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}

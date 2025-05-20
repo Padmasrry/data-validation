@@ -1,0 +1,15 @@
+fastapi
+motor
+pandas
+numpy
+scikit-learn
+xgboost
+reportlab
+pydantic
+uvicorn
+python-dateutil 
+re 
+os 
+csv 
+json 
+joblib

@@ -1,0 +1,107 @@
+.log-container {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 90%;
+  width: 900px;
+  background-color: #f4f7fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.log-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4a90e2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ff7f50;
+  font-weight: bold;
+}
+
+.error-text {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ff3b30;
+  font-weight: bold;
+}
+
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #e2e2e2;
+}
+
+.log-table th {
+  background-color: #4a90e2;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+}
+
+.log-table th,
+.log-table td {
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.log-table td {
+  word-wrap: break-word;
+}
+
+.log-table tr:hover {
+  background-color: #eef2ff;
+}
+
+.log-table tr:nth-child(even) {
+  background-color: #f7faff;
+}
+
+.log-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.log-table tr:focus-within {
+  background-color: #e3f2fd;
+  outline: none;
+}
+
+.log-table td:focus {
+  background-color: #bbdefb;
+  outline: none;
+}
+
+.log-container p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .log-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .log-table th,
+  .log-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .log-title {
+    font-size: 1.8rem;
+  }
+}

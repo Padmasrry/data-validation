@@ -1,0 +1,175 @@
+/* Dashboard Container */
+.dashboard {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Heading */
+.dashboard h1 {
+  font-size: 32px;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+/* Stats Container */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Stat Cards (Base) */
+.stat-card {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  color: #333; /* Dark text for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Colored Stat Cards */
+.blue {
+  border-left: 4px solid #007bff; /* Blue accent */
+}
+
+.gray {
+  border-left: 4px solid #6c757d; /* Gray accent */
+}
+
+.red {
+  border-left: 4px solid #dc3545; /* Red accent */
+}
+
+.green {
+  border-left: 4px solid #28a745; /* Green accent */
+}
+
+/* Stat Card Content */
+.stat-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.stat-card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Stat Icons */
+.stat-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Stat Change (Percentage) */
+.stat-change {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.arrow-up {
+  color: #28a745; /* Green for up */
+}
+
+.arrow-down {
+  color: #dc3545; /* Red for down */
+}
+
+/* Chart Container */
+.chart-container {
+  width: 100%;
+  height: 80px; /* Adjust height for charts */
+  margin: 10px 0;
+}
+
+/* Period Button */
+.period-btn {
+  background-color: #e9ecef; /* Light gray button */
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.period-btn:hover {
+  background-color: #dee2e6; /* Slightly darker on hover */
+}
+
+/* Loading and Error Text */
+.loading-text {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ff7f50;
+  font-weight: bold;
+}
+
+.error-text {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ff3b30;
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    min-width: 100%;
+  }
+}
+
+/* Existing styles remain unchanged */
+
+/* New bar graph container with scrolling */
+.monthly-bar-graph-container {
+  margin-top: 20px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 200px; /* Same as stat-card min-height */
+}
+
+.monthly-bar-graph-container h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.monthly-bar-graph-container .chart-container {
+  height: 200px; /* Fixed height to match stat-card */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.monthly-bar-graph-container .chart-container.scrollable {
+  width: 100%; /* Full width with scroll */
+}
